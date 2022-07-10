@@ -21,5 +21,6 @@ $$ \LARGE {dS \over S} = \mu dt + \sigma dW$$
 `python3 simulate.py -i 400 -d 0.2 -v 0.3 -p 200`
 <br>
 <br>
-<img src="https://user-images.githubusercontent.com/60279271/178163238-6947c3d0-fa75-417f-a51e-43e09411db59.png" alt="drawing" width="500"/>
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/60279271/178163238-6947c3d0-fa75-417f-a51e-43e09411db59.png" alt="drawing" width="600"/>
+</p>
