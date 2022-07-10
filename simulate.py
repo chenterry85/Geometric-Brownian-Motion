@@ -1,15 +1,22 @@
+from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 from GBM import GBM
 import numpy as np
 import matplotlib.pyplot as plt
 
-initial_price = 400
-drift = 0.4 # up 20% for expected turn
-interval = 1/365. # one day
-volatility = 0.2
+# Parse command line arguments
+parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter)
+parser.add_argument("-i", "--initial_price", default=100, type=float, help="Initial price of an asset")
+parser.add_argument("-d", "--drift", default=0.1, type=float, help="The drift or expected annual return")
+parser.add_argument("-v", "--volatility", default=0.1, type=float, help="The volatility/spread of an asset")
+args = vars(parser.parse_args())
+
+initial_price = args['initial_price']
+drift = args['drift']
+volatility = args['volatility']
+n = 1000 # of stochastic processes
+interval = 1/365. # set interval to one day
 
 stochastic_processes = []
-
-n = 1000 # of stochastic processes
 for _ in range(n):
   stochastic_processes.append(GBM(initial_price,drift,interval,volatility))
   
