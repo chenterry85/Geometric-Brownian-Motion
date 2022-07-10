@@ -15,4 +15,11 @@ $$ \LARGE {dS \over S} = \mu dt + \sigma dW$$
 1. Install Python3.6+
 2. Clone this repository
 3. Provide parameters (initial price, drift, volatility, # generated of paths)
-4. Run `python simulate.py -i <initial price> -d <drift> -v <volatility> -p <paths>` (use `--help` for more information)
+4. Run `python3 simulate.py -i <initial price> -d <drift> -v <volatility> -p <paths>` (use `--help` for more information)
+
+### Example
+`python3 simulate.py -i 400 -d 0.2 -v 0.3 -p 200`
+<br>
+<br>
+<img src="https://user-images.githubusercontent.com/60279271/178163238-6947c3d0-fa75-417f-a51e-43e09411db59.png" alt="drawing" width="500"/>
+
