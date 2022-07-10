@@ -14,5 +14,5 @@ $$ \LARGE {dS \over S} = \mu dt + \sigma dW$$
 ### Use python to generate sample paths for any given asset price
 1. Install Python3.6+
 2. Clone this repository
-3. Provide parameters (initial price, drift, volatility)
-4. Run `python simulate.py -i <initial price> -d <drift> -v <volatility>` (use `--help` for more information)
+3. Provide parameters (initial price, drift, volatility, # generated of paths)
+4. Run `python simulate.py -i <initial price> -d <drift> -v <volatility> -p <paths>` (use `--help` for more information)
