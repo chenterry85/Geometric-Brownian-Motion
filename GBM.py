@@ -14,4 +14,4 @@ class GBM:
     dW = normal(0, sqrt(self.dt) )
     dS = self.current_price * (self.mu * self.dt + self.sigma * dW)
     self.current_price += dS
-    self.asset_prices.append( self.current_price) 
+    self.asset_prices.append(self.current_price) 
