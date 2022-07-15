@@ -1,8 +1,8 @@
 # Geometric Brownian Motion
 
 Geometric Brownian Motion is a stochastic, non-linear process to model asset price. As a rule of thumb , there is an [academic paper](https://www.researchgate.net/publication/325987061_Forecasting_Share_Prices_of_Small_Size_Companies_in_Bursa_Malaysia_Using_Geometric_Brownian_Motion) that stated that GBM works best for forecasting when limited to max 2 week lookahead.
-
 The equations is as follows:
+
 $$ \LARGE {dS \over S} = \mu dt + \sigma dW $$
 
 - $dS$ - Change in asset price over time interval
